@@ -1,11 +1,16 @@
 {
-  "$schema": "https://unpkg.com/@changesets/config/schema.json",
+  "$schema": "https://unpkg.com/@changesets/config@3.1.1/schema.json",
   "changelog": "@changesets/cli/changelog",
   "commit": false,
-  "fixed": [],
+  "fixed": [["@blackdocs/core", "@blackdocs/ui"]],
   "linked": [],
-  "access": "public",
+  "access": "restricted",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": []
+  "bumpVersionsWithWorkspaceProtocolOnly": true,
+  "privatePackages": {
+    "version": true,
+    "tag": false
+  },
+  "ignore": ["@blackdocs/docs"]
 }
