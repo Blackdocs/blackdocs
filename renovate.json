@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
   "osvVulnerabilityAlerts": true,
-  "schedule": ["0 9 1,15 * *"],
+  "schedule": ["0 0 1,15 * *"],
   "prConcurrentLimit": 6,
   "labels": ["automation"],
   "reviewers": ["2hoch1"],
