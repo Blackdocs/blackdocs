@@ -1,0 +1,52 @@
+# dependencies
+node_modules/
+
+# build outputs
+dist/
+out/
+.next/
+
+# turbo
+.turbo/
+
+# test & coverage
+coverage/
+
+# env files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# typescript
+*.tsbuildinfo
+
+# next.js
+next-env.d.ts
+
+# vercel
+.vercel/
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.iml
+
+# ai tooling
+.claude/
+
+# logs
+*.log
+
+# os
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*~
+
+# misc
+.cache/

@@ -1,0 +1,33 @@
+{
+  "name": "blackdocs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "vitest",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck --continue",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.31.0",
+    "@commitlint/cli": "^20.5.3",
+    "@commitlint/config-conventional": "^20.5.3",
+    "@blackdocs/eslint-config": "workspace:*",
+    "eslint": "^9.39.4",
+    "husky": "^9.1.7",
+    "lint-staged": "^17.0.2",
+    "prettier": "^3.8.3",
+    "prettier-plugin-tailwindcss": "^0.8.0",
+    "turbo": "^2.9.10",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.6"
+  },
+  "packageManager": "pnpm@11.3.0",
+  "engines": {
+    "node": ">= 24.14.0"
+  }
+}

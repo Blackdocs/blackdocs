@@ -1,0 +1,145 @@
+breaking change:
+  - head-branch:
+      - '^breaking[/-]'
+      - '^major[/-]'
+
+'feature request':
+  - head-branch:
+      - '^feat[/-]'
+      - '^feature[/-]'
+
+bug:
+  - head-branch:
+      - '^fix[/-]'
+      - '^bug[/-]'
+
+chore:
+  - head-branch:
+      - '^chore[/-]'
+
+refactor:
+  - head-branch:
+      - '^refactor[/-]'
+
+docs:
+  - head-branch:
+      - '^docs[/-]'
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - apps/docs/**
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/workflows/**
+
+build:
+  - changed-files:
+      - any-glob-to-any-file:
+          - tsconfig*.json
+          - turbo.json
+          - tools/**
+          - eslint.config.js
+          - .prettierrc
+          - .prettierignore
+          - .editorconfig
+          - .gitignore
+          - .gitattributes
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - package.json
+          - '**/package.json'
+          - pnpm-lock.yaml
+          - pnpm-workspace.yaml
+          - renovate.json
+
+renovate:
+  - changed-files:
+      - any-glob-to-any-file:
+          - renovate.json
+
+tests:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.test.ts'
+          - '**/*.test.tsx'
+          - '**/*.spec.ts'
+          - '**/*.spec.tsx'
+          - packages/*/tests/**
+          - vitest.workspace.ts
+
+typings:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.d.ts'
+
+styles:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.css'
+          - tailwind.config.*
+          - '**/*.tailwind.*'
+
+api changes:
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/*/src/**
+
+chore:
+  - changed-files:
+      - any-glob-to-any-file:
+          - LICENSE
+          - .github/CODE_OF_CONDUCT.md
+          - .github/ISSUE_TEMPLATE/**
+          - .github/PULL_REQUEST_TEMPLATE.md
+
+# Packages
+'packages:core':
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/core/**
+
+'packages:ui':
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/ui/**
+
+'packages:typescript':
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/typescript/**
+
+'packages:tsconfig':
+  - changed-files:
+      - any-glob-to-any-file:
+          - packages/tsconfig/**
+
+# Apps
+'apps:docs':
+  - changed-files:
+      - any-glob-to-any-file:
+          - apps/docs/**
+
+'apps:web':
+  - changed-files:
+      - any-glob-to-any-file:
+          - apps/web/**
+
+'apps:template':
+  - changed-files:
+      - any-glob-to-any-file:
+          - apps/template/**
+
+# Tools
+'tools:eslint':
+  - changed-files:
+      - any-glob-to-any-file:
+          - tools/eslint/**
+
+'tools:vitest':
+  - changed-files:
+      - any-glob-to-any-file:
+          - tools/vitest/**

@@ -1,0 +1,10 @@
+{
+  "extends": "@blackdocs/typescript-config/react-library.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"]
+}

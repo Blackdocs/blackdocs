@@ -1,0 +1,15 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+
+allowBuilds:
+  esbuild: true
+  sharp: true
+
+peerDependencyRules:
+  allowedVersions:
+    next: '16'
+    typescript: '6'
+    eslint: '^9'
+  ignoreMissing:
+    - vite

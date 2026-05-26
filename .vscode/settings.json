@@ -1,0 +1,33 @@
+{
+  "eslint.useFlatConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "npm.packageManager": "pnpm",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "tailwindCSS.includeLanguages": {
+    "typescript": "javascript",
+    "typescriptreact": "javascript"
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "css.validate": false,
+  "search.exclude": {
+    "**/dist": true,
+    "**/coverage": true,
+    "**/node_modules": true,
+    "**/.turbo": true,
+    "**/pnpm-lock.yaml": true
+  },
+  "files.watcherExclude": {
+    "**/dist/*/**": true,
+    "**/coverage/*/**": true,
+    "**/.turbo/*/**": true
+  }
+}
