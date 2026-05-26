@@ -11,5 +11,4 @@ peerDependencyRules:
     next: '16'
     typescript: '6'
     eslint: '^9'
-  ignoreMissing:
-    - vite
+  ignoreMissing: []
