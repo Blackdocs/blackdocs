@@ -4,9 +4,7 @@ on:
   push:
     branches: [main]
 
-concurrency:
-  group: release
-  cancel-in-progress: false
+concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 permissions:
   contents: write
@@ -29,24 +27,17 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: 22
+          node-version: 24
           cache: pnpm
-          cache-dependency-path: pnpm-lock.yaml
-          registry-url: https://registry.npmjs.org
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm i --frozen-lockfile
 
-      - name: Build packages
-        run: pnpm build
-
-      - name: Create release PR or publish
+      - name: Create Release Pull Request or Publish to npm
+        id: changesets
         uses: changesets/action@v1
         with:
-          publish: pnpm changeset publish
-          version: pnpm changeset version
-          commit: 'chore: release packages'
+          publish: pnpm run release
+          version: pnpm run version
           title: 'chore: release packages'
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          commit: 'chore: release packages'

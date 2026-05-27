@@ -10,6 +10,8 @@
     "typecheck": "turbo run typecheck --continue",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
+    "release": "turbo run build --filter=./packages/* && pnpm changeset publish",
+    "version": "pnpm changeset version && pnpm install --lockfile-only",
     "prepare": "husky"
   },
   "devDependencies": {
