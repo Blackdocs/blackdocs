@@ -1,3 +1,3 @@
-import nextConfig from '@blackdocs/eslint-config/next';
+import nextConfig from '@blackdocs/eslint/next';
 
 export default nextConfig;

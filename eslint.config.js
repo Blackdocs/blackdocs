@@ -1,3 +1,3 @@
-import config from '@blackdocs/eslint-config';
+import config from '@blackdocs/eslint';
 
 export default config;

@@ -18,11 +18,11 @@
     "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "@blackdocs/eslint-config": "workspace:*",
+    "@blackdocs/eslint": "workspace:*",
     "@types/node": "25.8.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@blackdocs/typescript-config": "workspace:*",
+    "@blackdocs/typescript": "workspace:*",
     "typescript": "^6.0.3"
   }
 }

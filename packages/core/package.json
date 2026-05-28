@@ -10,6 +10,14 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./framework": {
+      "types": "./dist/framework/index.d.ts",
+      "import": "./dist/framework/index.js"
+    },
+    "./framework/next": {
+      "types": "./dist/framework/next.d.ts",
+      "import": "./dist/framework/next.js"
     }
   },
   "files": [
@@ -23,18 +31,24 @@
     "types:check": "tsc --noEmit",
     "test": "vitest run --passWithNoTests"
   },
-  "dependencies": {},
   "devDependencies": {
+    "@blackdocs/eslint": "workspace:*",
+    "@blackdocs/typescript": "workspace:*",
     "@types/node": "25.8.0",
     "@types/react": "^19.2.14",
-    "@blackdocs/eslint-config": "workspace:*",
+    "next": "^16.2.6",
     "rimraf": "^6.1.3",
-    "@blackdocs/typescript-config": "workspace:*",
     "tsdown": "0.22.0",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
+    "next": ">=14.0.0",
     "react": "^19.2.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    }
   },
   "publishConfig": {
     "access": "public"

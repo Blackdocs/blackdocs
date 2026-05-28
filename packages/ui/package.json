@@ -26,7 +26,7 @@
     "test": "vitest run --passWithNoTests"
   },
   "dependencies": {
-    "@base-ui/react": "^1.4.1",
+    "@base-ui/react": "^1.5.0",
     "@blackdocs/core": "workspace:*",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -35,19 +35,34 @@
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
+    "@blackdocs/eslint": "workspace:*",
+    "@blackdocs/typescript": "workspace:*",
     "@types/node": "25.8.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@blackdocs/eslint-config": "workspace:*",
+    "next": "^16.2.6",
     "rimraf": "^6.1.3",
-    "@blackdocs/typescript-config": "workspace:*",
     "tsdown": "0.22.0",
     "typescript": "^6.0.3"
   },
   "peerDependencies": {
+    "@tabler/icons-react": ">=3.0.0",
+    "lucide-react": ">=0.400.0",
+    "next": ">=14.0.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "tailwindcss": "^4.2.4"
+  },
+  "peerDependenciesMeta": {
+    "@tabler/icons-react": {
+      "optional": true
+    },
+    "lucide-react": {
+      "optional": true
+    },
+    "next": {
+      "optional": true
+    }
   },
   "publishConfig": {
     "access": "public"

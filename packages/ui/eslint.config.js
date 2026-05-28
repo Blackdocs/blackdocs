@@ -1,3 +1,3 @@
-import reactConfig from '@blackdocs/eslint-config/react-internal';
+import reactConfig from '@blackdocs/eslint/react-internal';
 
 export default reactConfig;

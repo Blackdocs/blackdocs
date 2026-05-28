@@ -1,5 +1,5 @@
 {
-  "extends": "@blackdocs/typescript-config/react-library.json",
+  "extends": "@blackdocs/typescript/react-library.json",
   "compilerOptions": {
     "paths": {
       "@/*": ["./src/*"]
